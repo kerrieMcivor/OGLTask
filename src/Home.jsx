@@ -46,7 +46,7 @@ function Home() {
   }, [checkboxes, products]);
 
   useEffect(() => {
-    fetch('../data_call.php')
+    fetch('https://main--loquacious-rabanadas-084dc8.netlify.app/data_call.php')
       .then((response) => response.json())
       .then((result) => {
         setProducts(result.data.data);
