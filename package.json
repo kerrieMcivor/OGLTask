@@ -1,10 +1,5 @@
 {
   "name": "react-files",
-<<<<<<< HEAD
-  "homepage": "https://master--loquacious-rabanadas-084dc8.netlify.app/"
-=======
-  "homepage": "https://master--loquacious-rabanadas-084dc8.netlify.app/",
->>>>>>> master
   "version": "0.1.0",
   "private": true,
   "dependencies": {
