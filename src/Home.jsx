@@ -46,7 +46,7 @@ function Home() {
   }, [checkboxes, products]);
 
   useEffect(() => {
-    fetch('https://kerriemcivor.co.uk/data_call.php')
+    fetch('../data_call.php')
       .then((response) => response.json())
       .then((result) => {
         setProducts(result.data.data);
