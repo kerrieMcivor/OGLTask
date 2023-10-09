@@ -3,7 +3,7 @@
 	ini_set('display_errors', 'On');
 	error_reporting(E_ALL);
     $executionStartTime = microtime(true);
-    $url='https://testapi.oglsoftware.co.uk/products/';
+    $url='http://testapi.oglsoftware.co.uk/products/';
 
     $ch = curl_init();
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
