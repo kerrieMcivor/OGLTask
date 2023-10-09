@@ -1,0 +1,33 @@
+.Home {
+    display: flex;
+    height: 100vh;
+}
+
+#filterSection {
+    max-width: 18%;
+    height: 100vh;
+}
+
+#resultSection {
+    width: 82%;
+}
+
+.card {
+    min-height: 400px;
+    max-height: 400px;
+}
+
+#search {
+    width: 95%;
+    height: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    #filterSection {
+      max-width: 30%;
+    }
+
+    #resultSection {
+        max-width: 70%
+    }
+  }
