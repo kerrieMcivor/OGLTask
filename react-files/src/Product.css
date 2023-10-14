@@ -1,7 +1,38 @@
+* {
+    max-height: 65vh;
+}
+
 .product {
-    margin: 5rem
+    margin: 1rem
 }
 
 .back {
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
+
+#productImg {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-content {
+    display: flex; 
+    justify-content: space-around;
+    margin: 1rem;
+}
+  
+  .col {
+    flex: 1;
+  }
+  
+  .col:first-child {
+    flex: 1;
+  }
+  
+  .col:last-child {
+    flex: 2; /* Right column (twice as wide) */
+  }
+  
+  
+  
+  

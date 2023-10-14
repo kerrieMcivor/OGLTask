@@ -6,14 +6,15 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
+import logo from './logo.png'
 
 function Header() {
   return (
     <div className="Header mb-4">
       <Navbar expand="lg" bg="light" data-bs-theme="light" sticky="top">
       <Container>
-        <Navbar.Brand href="/"><img src='./logo.png' alt="OGL Logo"></img></Navbar.Brand>
-          <Nav className="me-auto">
+        <Navbar.Brand href="/"><img src={logo} alt="OGL Logo" className="logo"></img></Navbar.Brand>
+          <Nav className="ms-auto">
             <Nav.Item  className="mt-2 mx-2"><Link to="/" style={{textDecoration: 'none', color: 'black'}}>All Products</Link></Nav.Item>
             <NavDropdown title="Categories" id="basic-nav-dropdown">
               <NavDropdown.Item><Link to="/glueguns" style={{textDecoration: 'none', color: 'black'}}>Glue Guns</Link></NavDropdown.Item>

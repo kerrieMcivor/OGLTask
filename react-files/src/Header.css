@@ -6,3 +6,8 @@ Link {
     text-decoration: none;
     color: black;
 }
+
+.logo {
+    max-width: 30%;
+    height: auto;
+}

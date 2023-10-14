@@ -19,23 +19,25 @@ function Product() {
   }
 
   return (
-    <div>
-    <div className="back" onClick={() => navigate(-1)} style={{ cursor: 'pointer' }}>↲ Return </div>
+    <div className="product-page">
+    <div className="back" onClick={() => navigate(-1)} style={{ cursor: 'pointer' }}>↲ Return</div>
     <div className="product">
-      <h2>Product Details</h2>
-    <div className="col">
-      <img src={product.image_url}  alt={product.name} />
+      <h3>{product.name}</h3>
+      <div className="product-content">
+        <div className="col mx-5">
+          <img src={product.image} alt={product.name} id="productImg"/>
+        </div>
+        <div className="col" id="rightCol">
+          <div className="product-details">
+            <h4>{product.description}</h4>
+            <h5 className="mt-3">{stock}</h5>
+            <h5 className="mt-3">{product.price}</h5>
+          </div>
+        </div>
+      </div>
     </div>
-    <div className="col">
-    <div className="Product">
-      <h5>{product.name}</h5>
-      <p>{product.description}</p>
-      <p>{stock}</p>
-      <p>{product.price}</p>
-    </div>
-    </div>
-    </div>
-    </div>
+  </div>
+  
   );
 }
 
