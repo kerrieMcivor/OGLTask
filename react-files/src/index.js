@@ -13,8 +13,8 @@ root.render(
   <Router>
     <React.StrictMode>
       <Header />
-      <App />
-      <Footer />
+      <App/>
+      <Footer className="fixed-bottom"/>
     </React.StrictMode>
   </Router>,
 );

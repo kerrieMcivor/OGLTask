@@ -14,7 +14,6 @@
 	header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 	header("Access-Control-Allow-Headers: Origin, Content-Type, Accept, Authorization");
 
-
 	$result=curl_exec($ch);
 
 	curl_close($ch);

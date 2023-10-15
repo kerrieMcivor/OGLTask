@@ -7,10 +7,12 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import logo from './logo.png'
+import Form from 'react-bootstrap/Form';
+import Home from './Home.jsx'
 
 function Header() {
   return (
-    <div className="Header mb-4">
+    <div className="Header mb-2">
       <Navbar expand="lg" bg="light" data-bs-theme="light" sticky="top">
       <Container>
         <Navbar.Brand href="/"><img src={logo} alt="OGL Logo" className="logo"></img></Navbar.Brand>

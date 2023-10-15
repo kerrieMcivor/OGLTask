@@ -1,10 +1,12 @@
 .Footer {
     background-color: #2978A0;
-    position: sticky;
-    margin-bottom: 0!important;
-    height: 13vh;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    height: 12vh;
     width: 100%;
     font-size: 14px;
+    position: absolute;
+    bottom: 0;
 }
 
 #input {

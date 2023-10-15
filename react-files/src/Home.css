@@ -8,13 +8,15 @@
     height: 100vh;
 }
 
-#resultSection {
-    width: 82%;
+#results {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-width: 90%;
+    height: 100vh;
 }
 
 .card {
-    min-height: 400px;
-    max-height: 400px;
+    min-height: 800px;
 }
 
 #search {
