@@ -25,13 +25,13 @@ function Home() {
   } 
 
   const handleCheck = (checkboxId) => {
-    setCheckboxes((prevCheckboxes) =>
+    setCheckboxes((prevCheckboxes) => 
       prevCheckboxes.map((checkbox) =>
         checkbox.id === checkboxId
           ? { ...checkbox, checked: !checkbox.checked }
           : checkbox
       )
-    );
+    )
   };
 
   useEffect(() => {
@@ -41,8 +41,8 @@ function Home() {
     if (selectedTypes.length === 0) {
       setFilteredProducts(products);
     } else {
-      const filtered = products.filter((product) =>
-        selectedTypes.includes(product.type)
+      const filtered = products.filter((product) =>  { 
+        selectedTypes.includes(product.type)}
       );
       setFilteredProducts(filtered);
     }
